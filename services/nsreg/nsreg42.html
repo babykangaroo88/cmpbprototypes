@@ -80,7 +80,7 @@
 					<div class="ibox-content">
 					<ul class="list-inline col-md-offset-1">
 					  <li><a href="nsreg3.html"><i class="fa fa-angle-left"></i> Back</a></li>
-					  <li><h5 class="breadcrumb text-muted">Question 3 of 7</h5></li>
+					  <li><h5 class="breadcrumb text-muted">Question 3 of 6</h5></li>
 					</ul>
 				</div>
 						
@@ -88,46 +88,8 @@
 					<div class="ibox-content">
 					<div class="row">
 					<div class="col-md-10 col-md-offset-1">
-					<h4 class="voffset3">Are your education details correct?</h4>
-					<div>
-                                <table class="table voffset5">
-                   
-                                    <tbody>
-                                    <tr>
-                                        
-                                        <td>Institution</td>
-										
-										  <td>Singapore Polytechnic</td>
-										  <td><a href="#"><u>Change</u></a></td>
-                                
-                                    </tr>
-                                    <tr>
-                                        <td>Course</td>
-										<td>Diploma in Engineering</td>
-										<td><a id="clicktounhide2" href="#"><u>Change</u></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Start Date</td>
-										<td>June 2015</td>
-										<td><a id="clicktounhide2" href="#"><u>Change</u></a></td>
-                                    </tr>
-									<tr>
-                                        <td>End Date</td>
-										<td>June 2018</td>
-										<td><a id="clicktounhide2" href="#"><u>Change</u></a></td>
-                                    </tr>
-										<tr>
-                                        <td>Status</td>
-										<td>Attending</td>
-										<td><a id="clicktounhide2" href="#"><u></u></a></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-							<blockquote id="unhide3" class="hidden">Please submit the education certifications for your updated course. Please email to <a href="#"><u>contact@ns.sg</u></a> or fax to 68537894.</blockquote>
-					<div id="clicktounhide1" class="i-checks voffset4"><label> <input type="radio" value="option1" name="a"> <i></i> I had verified my education details. </label></div>
-                    <div id="clicktounhide" class="i-checks voffset2"><label> <input type="radio" value="option2" name="a"> <i></i> I study in a non-government school. </label></div>
-					 <div id="unhide" class="form-group voffset2 hidden col-md-8"><blockquote>
+							
+					 <div class="form-group voffset2 col-md-8">
 					 <h4>Where are you studying? </h4>
 					 <div id="clicktounhide4" class="i-checks voffset3"><label> <input type="radio" value="option1" name="a"> <i></i> Local Private Diploma/Certification</label></div>
 					  
@@ -155,6 +117,8 @@
 					<label class="voffset3">Start Date</label> <input class="form-control input-lg">
 					<label class="voffset3">End Date</label> <input class="form-control input-lg">
 					<label class="voffset3">Attending Standard</label> <input class="form-control input-lg">
+					 <p class="voffset3">Please submit the education certifications for your updated course. Please email to <a href="#"><u>contact@ns.sg</u></a> or fax to 68537894.
+					 </p>
 					 </blockquote>
 					 
                     <div id="clicktounhide5" class="i-checks voffset2"><label> <input type="radio" value="option2" name="a"> <i></i> Local Private N/O/A Levels </label></div>
@@ -169,6 +133,8 @@
 					<label class="voffset3">Start Date</label> <input class="form-control input-lg">
 					<label class="voffset3">End Date</label> <input class="form-control input-lg">
 					<label class="voffset3">Attending Standard</label> <input class="form-control input-lg">
+					 <p class="voffset3">Please submit the education certifications for your updated course. Please email to <a href="#"><u>contact@ns.sg</u></a> or fax to 68537894.
+					 </p>
 					 </blockquote>
 					 
 					  <div id="clicktounhide6" class="i-checks voffset2"><label> <input type="radio" value="option2" name="a"> <i></i> Home/Overseas Study</label></div>
@@ -184,19 +150,17 @@
 						<label class="voffset3">School Address</label> <input class="form-control input-lg">
 							<label class="voffset3">Country</label> <input class="form-control input-lg">
 					<label class="voffset3">Attending Standard</label> <input class="form-control input-lg">
-					 </blockquote>
-					 
-					 </blockquote></div>
+					  <p class="voffset3">Please submit the education certifications for your updated course. Please email to <a href="#"><u>contact@ns.sg</u></a> or fax to 68537894.
+					 </p>
+					
+					</div>
 					
 					 <div class="col-md-8">
 					<a class="btn btn-primary btn-lg voffset5 custom-btn adjust" href="nsreg5.html" role="button">Continue</a>
-					
                     </div>
-					
 					</div>
-					
 					</div>
-					<a href="nsreg42.html"><i>If PE is from non-govt institutions and we do not have their information</i></a>
+						<a href="nsreg4.html"><i>If PE is from govt institutions and we have their information</i></a>
 					</div>
 					</div>
 					</div>
@@ -230,23 +194,24 @@
 			$('#clicktounhide1').click(function(){
 				$("#unhide").addClass('hidden');
 			});
-			$('#clicktounhide2').click(function(){
-				$("#unhide3").removeClass('hidden');
-			});
+		
 			$('#clicktounhide4').click(function(){
 				$("#unhide4").removeClass('hidden');
 				$("#unhide5").addClass('hidden');
 				$("#unhide6").addClass('hidden');
+				$("#unhide3").removeClass('hidden');
 			});
 			$('#clicktounhide5').click(function(){
 				$("#unhide5").removeClass('hidden');
 				$("#unhide4").addClass('hidden');
 				$("#unhide6").addClass('hidden');
+				$("#unhide3").removeClass('hidden');
 			});
 			$('#clicktounhide6').click(function(){
 				$("#unhide6").removeClass('hidden');
 				$("#unhide4").addClass('hidden');
 				$("#unhide5").addClass('hidden');
+				$("#unhide3").removeClass('hidden');
 			});
 			});
 			</script>

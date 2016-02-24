@@ -13,6 +13,8 @@
 
     <link href="../../css/animate.css" rel="stylesheet">
     <link href="../../css/style.css" rel="stylesheet">
+	    <link href="../../css/basic.css" rel="stylesheet">
+    <link href="../../css/dropzone.css" rel="stylesheet">
 
 </head>
 
@@ -49,6 +51,7 @@
 
         </div>
     </nav>
+
     <div id="page-wrapper" class="gray-bg">
         <div class="row border-bottom">
             <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
@@ -78,23 +81,20 @@
                     <div class="container">
 					<div class="ibox-content">
 					<ul class="list-inline col-md-offset-1">
-					  <li><a href="nsreg1.html"><i class="fa fa-angle-left"></i> Back</a></li>
-					  <li><h5 class="breadcrumb text-muted">Question 1 of 7</h5></li>
+					  <li><a href="applydefer2.html"><i class="fa fa-angle-left"></i> Back</a></li>
+					  <li><h5 class="breadcrumb text-muted">Question 2 of 2</h5></li>
 					</ul>
 				</div>
+						
+						
 					<div class="ibox-content">
 					<div class="row">
-					<div class="col-md-6 col-md-offset-1">
-					<h4 class="voffset3">What are your contact details?</h4>
-					<form role="form">
-                                    <div class="form-group voffset4"><label>Mobile</label> <input class="form-control input-lg"></div>
-									 
-									 <div class="form-group voffset2"><label>Email</label> <input class="form-control input-lg"></div>
-									 <a href="#" id="clicktounhide" class="underline">  <i id="arrow" class="fa fa-chevron-right"></i> I want to be contacted by House Telephone.</a>
-									 <div id="unhide" class="form-group voffset2 hidden"><blockquote><label>Telephone</label> <input class="form-control input-lg"></blockquote></div>
-						
-                    </form>
-						<a class="btn btn-primary btn-lg voffset5 custom-btn" href="nsreg3.html" role="button">Continue</a>
+					<div class="col-md-10 col-md-offset-1">
+					<h4 class="voffset3">Upload your documents</h4>
+					 <form id="my-awesome-dropzone" class="dropzone" action="#">
+                            <div class="dropzone-previews voffset8 text-center"><h2>Drop files here to upload (or click)</h2></div>
+                        </form>
+					<a class="btn btn-primary btn-lg voffset5 custom-btn" href="applydefer44.html" role="button">Continue</a>
                     </div>
 					</div>
 					</div>
@@ -121,13 +121,42 @@
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
+<script src="../../js/plugins/iCheck/icheck.min.js"></script>
+ <script src="../../js/plugins/dropzone/dropzone.js"></script>
 <script>
         $(document).ready(function(){
 			$('#clicktounhide').click(function(){
-				$("#unhide").toggleClass('hidden');
-				$("#arrow").toggleClass('fa fa-chevron-right').toggleClass('fa fa-chevron-down');
+				$("#unhide").removeClass('hidden');
 			});
-			
+			$('#clicktounhide1').click(function(){
+				$("#unhide").addClass('hidden');
+			});
+			   Dropzone.options.myAwesomeDropzone = {
+
+                autoProcessQueue: false,
+                uploadMultiple: true,
+                parallelUploads: 100,
+                maxFiles: 100,
+
+                // Dropzone settings
+                init: function() {
+                    var myDropzone = this;
+
+                    this.element.querySelector("button[type=submit]").addEventListener("click", function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        myDropzone.processQueue();
+                    });
+                    this.on("sendingmultiple", function() {
+                    });
+                    this.on("successmultiple", function(files, response) {
+                    });
+                    this.on("errormultiple", function(files, response) {
+                    });
+                }
+
+            }
+	
 			});
 			</script>
 

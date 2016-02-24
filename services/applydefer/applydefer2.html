@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | Main view</title>
+    <title>CMPB Transactional eServices and Dashboard</title>
 
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -19,7 +19,8 @@
 <body class="canvas-menu">
 
 <div id="wrapper">
-     <nav class="navbar-default navbar-static-side" role="navigation">
+
+          <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse"> <a class="close-canvas-menu"><i class="fa fa-times fa-2x"></i></a>
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
@@ -40,6 +41,9 @@
                 </li>
 				<li>
                     <a href="../../defermentanytime.html"><span class="nav-label">Apply for Deferment (Anytime)</span> </a>
+                </li>
+				<li>
+                    <a href="../../afterdeferment.html"><span class="nav-label">Deferment and Medical Review Updates</span> </a>
                 </li>
             </ul>
 
@@ -73,40 +77,95 @@
 			
                 <div class="ibox">
                     <div class="container">
-					
-					<div class="ibox-content navy-bg text-center">
-					<div class="row">
-					<div class="col-md-10 col-md-offset-1">
-					<h2 class="voffset4">Successful Deferment</h2>
-							<h5 class="voffset4">Your reference number is</h5>
-							<h3><strong>HDJ5789F</strong></h3>
-							<h5 class="voffset4">We have sent you a confirmation email.</h5>
-                    </div>
-					</div>
-					</div>
-					
-					</div>
-					</div>
-					  <div class="ibox">
-                    <div class="container">
+					<div class="ibox-content">
+					<ul class="list-inline col-md-offset-1">
+					  <li><a href="applydefer1.html"><i class="fa fa-angle-left"></i> Back</a></li>
+					  <li><h5 class="breadcrumb text-muted">Question 1 of 2</h5></li>
+					</ul>
+				</div>
+						
+						
 					<div class="ibox-content">
 					<div class="row">
 					<div class="col-md-10 col-md-offset-1">
 							
-					<h4>What happens next</h4>
-					<p>We've sent your details to CMPB NS Resource Branch. They may contact you for more information.</p>
-					<p>Processing may take up to 14 days. Thank you for your patience.</p>
-						<p>We will update on your deferment status through SMS and email notification.</p>
-					
+					 <div class="form-group voffset2 col-md-8">
+					 <h4>Where are you studying? </h4>
+					 <div id="clicktounhide4" class="i-checks voffset3"><label> <input type="radio" value="option1" name="a"> <i></i> Local Private Diploma/Certification</label></div>
+					  
+					  <blockquote id="unhide4" class="hidden">
+					  <label>Name of Institution</label> <input class="form-control input-lg">
+					 
+					 <label class="voffset3">Type of Course</label> <div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+    Courses for N/O/A Levels
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+   Courses for Tertiary/Dip/Cert Levels
+  </label>
+</div>
+					<label class="voffset3">Course for N/O/A Levels</label> <input class="form-control input-lg"> 
 
-<p><a href="#"><u>What did you think of this service?</u></a> (takes 30 seconds)</p>
-						<p><a href="../../afterdeferment.html"><u>Back to home</u></a></p>		
+					<label class="voffset3">N/O/A Year Exam</label> <input class="form-control input-lg"> 
+					<label class="voffset3">N/O/A Number of Passes</label> <input class="form-control input-lg"> 
+					<label class="voffset3">Course Level</label> <input class="form-control input-lg"> 					
+					<label class="voffset3">Status</label> <input class="form-control input-lg">
+					<label class="voffset3">Start Date</label> <input class="form-control input-lg">
+					<label class="voffset3">End Date</label> <input class="form-control input-lg">
+					<label class="voffset3">Attending Standard</label> <input class="form-control input-lg">
+					 <p class="voffset3">Please submit the education certifications for your updated course. Please email to <a href="#"><u>contact@ns.sg</u></a> or fax to 68537894.
+					 </p>
+					 </blockquote>
+					 
+                    <div id="clicktounhide5" class="i-checks voffset2"><label> <input type="radio" value="option2" name="a"> <i></i> Local Private N/O/A Levels </label></div>
+					
+					 <blockquote id="unhide5" class="hidden">
+					  <label>Name of Institution</label> <input class="form-control input-lg">
+					 
+					<label class="voffset3">Course</label> <input class="form-control input-lg"> 
+
+					<label class="voffset3">Course Level</label> <input class="form-control input-lg"> 
+					<label class="voffset3">Status</label> <input class="form-control input-lg"> 
+					<label class="voffset3">Start Date</label> <input class="form-control input-lg">
+					<label class="voffset3">End Date</label> <input class="form-control input-lg">
+					<label class="voffset3">Attending Standard</label> <input class="form-control input-lg">
+					 <p class="voffset3">Please submit the education certifications for your updated course. Please email to <a href="#"><u>contact@ns.sg</u></a> or fax to 68537894.
+					 </p>
+					 </blockquote>
+					 
+					  <div id="clicktounhide6" class="i-checks voffset2"><label for="radio-home-address"> <input id="radio-home-address" type="radio" value="option2" name="a"> <i></i> Home/Overseas Study</label></div>
+					<blockquote id="unhide6" class="hidden">
+					  <label>Name of Institution</label> <input class="form-control input-lg">
+					 
+					<label class="voffset3">Course</label> <input class="form-control input-lg"> 
+
+					<label class="voffset3">Course Level</label> <input class="form-control input-lg"> 
+					<label class="voffset3">Status</label> <input class="form-control input-lg"> 
+					<label class="voffset3">Start Date</label> <input class="form-control input-lg">
+					<label class="voffset3">End Date</label> <input class="form-control input-lg">
+						<label class="voffset3">School Address</label> <input class="form-control input-lg">
+							<label class="voffset3">Country</label> <input class="form-control input-lg">
+					<label class="voffset3">Attending Standard</label> <input class="form-control input-lg">
+					  <p class="voffset3">Please submit the education certifications for your updated course. Please email to <a href="#"><u>contact@ns.sg</u></a> or fax to 68537894.
+					 </p>
+					
+					</div>
+					
+					 <div class="col-md-8">
+					<button id="testest" class="btn btn-primary btn-lg voffset5 custom-btn adjust">Continue</button>
+					  
                     </div>
 					</div>
 					</div>
-				</div>
+						
 					</div>
-										
+					</div>
+					</div>
+				
 			</div>
         </div>
 </div>
@@ -127,6 +186,7 @@
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
+<script src="../../js/plugins/iCheck/icheck.min.js"></script>
 <script>
         $(document).ready(function(){
 			$('#clicktounhide').click(function(){
@@ -135,6 +195,34 @@
 			$('#clicktounhide1').click(function(){
 				$("#unhide").addClass('hidden');
 			});
+		
+			$('#clicktounhide4').click(function(){
+				$("#unhide4").removeClass('hidden');
+				$("#unhide5").addClass('hidden');
+				$("#unhide6").addClass('hidden');
+				$("#unhide3").removeClass('hidden');
+			});
+			$('#clicktounhide5').click(function(){
+				$("#unhide5").removeClass('hidden');
+				$("#unhide4").addClass('hidden');
+				$("#unhide6").addClass('hidden');
+				$("#unhide3").removeClass('hidden');
+			});
+			$('#clicktounhide6').click(function(){
+				$("#unhide6").removeClass('hidden');
+				$("#unhide4").addClass('hidden');
+				$("#unhide5").addClass('hidden');
+				$("#unhide3").removeClass('hidden');
+			});
+			
+			$('#testest').click(function(){
+			var input = document.getElementById('radio-home-address');
+			if (input.checked) {
+					window.location.href = "applydefer33.html";
+			 }else{
+				 window.location.href = "applydefer3.html";
+			 }});
+				
 			});
 			</script>
 

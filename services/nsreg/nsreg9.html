@@ -20,7 +20,7 @@
 
 <div id="wrapper">
 
-          <nav class="navbar-default navbar-static-side" role="navigation">
+      <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse"> <a class="close-canvas-menu"><i class="fa fa-times fa-2x"></i></a>
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
@@ -49,6 +49,8 @@
 
         </div>
     </nav>
+    
+
     <div id="page-wrapper" class="gray-bg">
         <div class="row border-bottom">
             <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
@@ -76,25 +78,55 @@
 			
                 <div class="ibox">
                     <div class="container">
-					<div class="ibox-content">
-					<ul class="list-inline col-md-offset-1">
-					  <li><a href="nsreg1.html"><i class="fa fa-angle-left"></i> Back</a></li>
-					  <li><h5 class="breadcrumb text-muted">Question 1 of 7</h5></li>
-					</ul>
-				</div>
+					
 					<div class="ibox-content">
 					<div class="row">
-					<div class="col-md-6 col-md-offset-1">
-					<h4 class="voffset3">What are your contact details?</h4>
-					<form role="form">
-                                    <div class="form-group voffset4"><label>Mobile</label> <input class="form-control input-lg"></div>
-									 
-									 <div class="form-group voffset2"><label>Email</label> <input class="form-control input-lg"></div>
-									 <a href="#" id="clicktounhide" class="underline">  <i id="arrow" class="fa fa-chevron-right"></i> I want to be contacted by House Telephone.</a>
-									 <div id="unhide" class="form-group voffset2 hidden"><blockquote><label>Telephone</label> <input class="form-control input-lg"></blockquote></div>
-						
-                    </form>
-						<a class="btn btn-primary btn-lg voffset5 custom-btn" href="nsreg3.html" role="button">Continue</a>
+					<div class="col-md-10 col-md-offset-1">
+					<h4 class="voffset4">Check your answers before sending your application</h4>
+					<div>
+                                <table class="table voffset5">
+                   
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Contact</td>
+										
+										  <td>555 77 854 <br> email@gmail.com</td>
+							
+										<td><a href="#"><u>Change</u></a></td>
+                                
+                                    </tr>
+                                    <tr>
+                                        <td>Address</td>
+										<td>Toa Payoh Avenue 1 <br> Block 156 #17-82 <br> Singapore 445062</td>
+										<td><a href="#"><u>Change</u></a></td>
+                                    </tr>
+									<tr>
+                                        <td>Education</td>
+										<td>Singapore Polytechnic <br> Diploma in Engineering <br> June 2015 - June 2018 <br> Attending </td>
+										<td><a href="#"><u>Change</u></a></td>
+                                    </tr>
+									<tr>
+                                        <td>Emergency Contact</td>
+										<td>Nicholas Tan <br> S1024982Y <br> Father <br> 97380187 </td>
+										<td><a href="#"><u>Change</u></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bank Account Number</td>
+										<td>POSB <br> 4235346567457 </td>
+										<td><a href="#"><u>Change</u></a></td>
+                                    </tr>
+									<tr>
+                                        <td>Medical Condition/s</td>
+										<td>Nil</td>
+										<td><a href="#"><u>Change</u></a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+							<h4>Now send your application</h4>
+							<p>By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+					<a class="btn btn-primary btn-lg voffset3 custom-btn" href="nsreg10.html" role="button">Accept and send application</a>
                     </div>
 					</div>
 					</div>
@@ -118,16 +150,18 @@
 <script src="../../js/plugins/metisMenu/jquery.metisMenu.js"></script>
 <script src="../../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
+
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
 <script>
         $(document).ready(function(){
 			$('#clicktounhide').click(function(){
-				$("#unhide").toggleClass('hidden');
-				$("#arrow").toggleClass('fa fa-chevron-right').toggleClass('fa fa-chevron-down');
+				$("#unhide").removeClass('hidden');
 			});
-			
+			$('#clicktounhide1').click(function(){
+				$("#unhide").addClass('hidden');
+			});
 			});
 			</script>
 

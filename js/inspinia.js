@@ -5,7 +5,14 @@
  *
  */
 
-
+window.goPlacest = function(){
+		var input = document.getElementById('radio-home-address');
+		if (input.checked) {
+				window.location.href = "applydefer3";
+		 }else{
+			 window.location.href = "index";
+		 }	
+	}
 $(document).ready(function () {
 
 

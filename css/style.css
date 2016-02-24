@@ -37,7 +37,9 @@ p {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
-
+.pull-up{
+	margin-bottom:-10px;
+}
 .special{
 font-size:22px;	
 }
@@ -1537,6 +1539,8 @@ a.list-group-item.active:focus {
   height: 200px;
   margin: auto;
 }
+
+
 .jqstooltip {
   position: absolute;
   display: block;
@@ -6150,6 +6154,9 @@ body.body-small .vote-icon {
   -webkit-animation-delay: -1s;
   animation-delay: -1s;
 }
+.adjust{
+	margin-left:-15px;
+}
 .sk-spinner-circle .sk-circle4:before {
   -webkit-animation-delay: -0.9s;
   animation-delay: -0.9s;
@@ -7164,7 +7171,9 @@ p {
 h2 {
   font-size: 26px;
 }
-
+label{
+	font-size:14px;
+}
 }
 body.rtls {
   /* Theme config */

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | Main view</title>
+    <title>CMPB Transactional eServices and Dashboard</title>
 
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -20,7 +20,7 @@
 
 <div id="wrapper">
 
-         <nav class="navbar-default navbar-static-side" role="navigation">
+          <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse"> <a class="close-canvas-menu"><i class="fa fa-times fa-2x"></i></a>
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
@@ -41,6 +41,9 @@
                 </li>
 				<li>
                     <a href="../../defermentanytime.html"><span class="nav-label">Apply for Deferment (Anytime)</span> </a>
+                </li>
+				<li>
+                    <a href="../../afterdeferment.html"><span class="nav-label">Deferment and Medical Review Updates</span> </a>
                 </li>
             </ul>
 
@@ -77,7 +80,7 @@
 					<div class="ibox-content">
 					<ul class="list-inline col-md-offset-1">
 					  <li><a href="nsreg4.html"><i class="fa fa-angle-left"></i> Back</a></li>
-					  <li><h5 class="breadcrumb text-muted">Question 4 of 4</h5></li>
+					  <li><h5 class="breadcrumb text-muted">Question 4 of 7</h5></li>
 					</ul>
 				</div>
 						
@@ -85,64 +88,77 @@
 					<div class="ibox-content">
 					<div class="row">
 					<div class="col-md-10 col-md-offset-1">
-					<h4 class="voffset3">Medical Questionaire</h4>
+					<h4 class="voffset3">Who should we contact during an emergency?</h4>
 					<div>
-                                <table class="table">
-                                    <thead>
-                                    <tr>
-                                        <th>Condition </th>
-                                        <th>Yes </th>
-                                        <th>No</th>
-                                      
-                                    </tr>
-                                    </thead>
+                                <table class="table voffset5">
+                   
                                     <tbody>
                                     <tr>
-                                        
-                                        <td>Condition1</td>
+                                        <td>
 										
-										  <form role="form"><td>
-											<label class="radio-inline">
-											  <input type="radio" name="optradio">
-											</label></td>
-											<td><label class="radio-inline">
-											  <input type="radio" name="optradio">
-											</label>
-										 </td> </form>
+											  <label>
+												<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+												
+											  </label>
+											</td>
+                                        <td>Nicholas Tan</td>
+										<td>S1024982Y</td>
+										<td>Father</td>
+										<td>97380187</td>
+										
                                 
                                     </tr>
                                     <tr>
-                                        <td>Condition1</td>
-										<form role="form"><td>
-											<label class="radio-inline">
-											  <input type="radio" name="optradio">
-											</label></td>
-											<td><label class="radio-inline">
-											  <input type="radio" name="optradio">
-											</label>
-										 </td> </form>
+                                        <td>
+											  <label>
+												<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+												
+											  </label>
+											</td>
+										<td>Serene Ng</td>
+										<td>S7623824J</td>
+										<td>Mother</td>
+										<td>98401582</td>
+										
                                     </tr>
                                     <tr>
-                                        <td>Condition1</td>
-										<form role="form"><td>
-											<label class="radio-inline">
-											  <input type="radio" name="optradio">
-											</label></td>
-											<td><label class="radio-inline">
-											  <input type="radio" name="optradio">
-											</label>
-										 </td> </form>
+										<td>
+											  <label>
+												<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+												
+											  </label>
+											</td>
+                                        <td>Jacqueline Tan</td>
+										<td>S9405925U</td>
+										<td>Sister</td>
+										<td>91405241</td>
+									
                                     </tr>
-                                    <tr>
-                                        <td>Condition1</td>
-										<form role="form"><td>
-											<label class="radio-inline">
-											  <input type="radio" name="optradio">
-											</label></td>
-											<td><label class="radio-inline">
-											  <input type="radio" name="optradio">
-											</label>
-										 </td> </form>
+									 <tr>
+									 <td>
+											  <label>
+												<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+												
+											  </label>
+											</td>
+                                        <td>Jason Tan</td>
+										<td>S8789923O</td>
+										<td>Brother</td>
+										<td>90339817</td>
+										
+                                    </tr>
+									 <tr>
+									 <td>
+											  <label>
+												<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+												
+											  </label>
+											</td>
+                                        <td>Nicole Lim</td>
+										<td>S8980042I</td>
+										<td>Spouse</td>
+										<td>98334260</td>
+										
                                     </tr>
                                     </tbody>
                                 </table>
@@ -174,6 +190,7 @@
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
+<script src="../../js/plugins/iCheck/icheck.min.js"></script>
 <script>
         $(document).ready(function(){
 			$('#clicktounhide').click(function(){
@@ -182,6 +199,7 @@
 			$('#clicktounhide1').click(function(){
 				$("#unhide").addClass('hidden');
 			});
+	
 			});
 			</script>
 

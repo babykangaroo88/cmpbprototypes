@@ -6,13 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | Main view</title>
+    <title>CMPB Transactional eServices and Dashboard</title>
 
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <link href="../../css/animate.css" rel="stylesheet">
     <link href="../../css/style.css" rel="stylesheet">
+	<link href="../../css/datepicker3.css" rel="stylesheet">
 
 </head>
 
@@ -41,6 +42,9 @@
                 </li>
 				<li>
                     <a href="../../defermentanytime.html"><span class="nav-label">Apply for Deferment (Anytime)</span> </a>
+                </li>
+				<li>
+                    <a href="../../afterdeferment.html"><span class="nav-label">Deferment and Medical Review Updates</span> </a>
                 </li>
             </ul>
 
@@ -74,70 +78,373 @@
 			
                 <div class="ibox">
                     <div class="container">
-					
-					<div class="ibox-content navy-bg text-center">
-					<div class="row">
-					<div class="col-md-10 col-md-offset-1">
-					<h2 class="voffset4">Registration Complete</h2>
-							<h5 class="voffset4">Your reference number is</h5>
-							<h3><strong>HDJ2123F</strong></h3>
-							<h5 class="voffset4">We have sent you a confirmation email.</h5>
-                    </div>
-					</div>
-					</div>
-					
-					</div>
-					</div>
-					  <div class="ibox">
-                    <div class="container">
+					<div class="ibox-content">
+					<ul class="list-inline col-md-offset-1">
+					  <li><a href="nsreg6.html"><i class="fa fa-angle-left"></i> Back</a></li>
+					  <li><h5 class="breadcrumb text-muted">Question 6 of 7</h5></li>
+					</ul>
+				</div>
+						
+						
 					<div class="ibox-content">
 					<div class="row">
 					<div class="col-md-10 col-md-offset-1">
-							
-					<h4>What happens next</h4>
-					<p>We've sent your application to CMPB NS Resource Branch. </p>
-
-<p><a href="#"><u>What did you think of this service?</u></a> (takes 30 seconds)</p>
-
-<p>You have yet to <a href="../defer/defer1.html"><u>confirm your deferment details</u></a> and <a href="../medbook/medbook1.html"><u>book your medical appointment</u></a>. Please do so now.</p>
-						<p><a href="../../seventeenafterRegDefMed.html"><u>Back to home</u></a></p>	
-                    </div>
+					<h4 class="voffset3">Do you have any of the below medical condition?</h4>
+					<div>
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th>Condition </th>
+                                        <th>Yes </th>
+                                        <th>No</th>
+                                      
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Medical Allergy <textarea id="unhide" class="form-control hidden" rows="3" placeholder="Please provide more information"></textarea></td>
+										
+										  <form role="form"><td>
+											<label>
+											  <input id="clicktounhide" type="radio" name="optradio">
+											</label>
+											
+											</td>
+											<td><label>
+											  <input id="clicktohide" type="radio" name="optradio">
+											</label>
+										</td> </form>
+										 
+                                
+                                    </tr>
+                                    <tr>
+                                        <td>G6PD Deficiency <textarea id="unhide2" class="form-control hidden" rows="3" placeholder="Please provide more information"></textarea></td>
+										<form role="form"><td>
+											<label>
+											  <input id="clicktounhide2" type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input id="clicktohide2" type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+                                    <tr>
+                                        <td>Childhood Illness
+										<div id="unhide3" class="row hidden">
+										<div class="col-md-12">
+										<label class="voffset3">Are you on medication?</label>
+										<p>
+											  <input type="radio" name="optradio">
+											 Yes</p>
+											  <p><input type="radio" name="optradio"> No
+											</p>
+											<label>When were you diagnosed?</label>
+											<div class="form-group" id="data_1">
+                               
+                                <div class="input-group date">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="03/04/2014">
+                                </div>
+                            </div>
+											<textarea class="form-control" rows="3" placeholder="Please provide any other relevant information"></textarea>
+										</td>
+										</div></div>
+										<form role="form"><td>
+											<label>
+											  <input id="clicktounhide3" type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input id="clicktohide3" type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+                                    <tr>
+                                        <td>Heart Disease</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+									 <tr>
+                                        <td>Asthma/Lung Disease</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+									 <tr>
+                                        <td>Epilepsy/Fits/Faints</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+									 <tr>
+                                        <td>Digestive Problem</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+									 <tr>
+                                        <td>Hepatatis</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+									 <tr>
+                                        <td>Kidney Problem</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+									 <tr>
+                                        <td>Skin Problem/Allergy/Bad Rash</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+									 <tr>
+                                        <td>Injury/Fracture/Bone Problem/Joint Problem</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+									 <tr>
+                                        <td>Blood Disorder</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+									 <tr>
+                                        <td>Easy Bruising/Bleeding</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+									 <tr>
+                                        <td>Eye Problem/Previous Corneal Refractive Surgery/Intend to go for Corneal Refractive Surgery</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+									 <tr>
+                                        <td>Hearing Problem</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+									 <tr>
+                                        <td>Mental Illness/Psychiatric Problem/Consulted a psychiatrist at Child Guidance Clinic (IMH) or any other clinic or hospital</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+									 <tr>
+                                        <td>History of Loss of Consciousness during Exercise</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+							<h4 class="voffset3">Does your family members have any of the below medical condition?</h4>
+							<div>
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th>Condition </th>
+                                        <th>Yes </th>
+                                        <th>No</th>
+                                      
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        
+                                        <td>Heart Disease/Heart Attack before 55 years in Males and 65 years in Females <textarea id="unhide" class="form-control hidden" rows="3" placeholder="Please provide more information"></textarea></td>
+										
+										  <form role="form"><td>
+											<label>
+											  <input id="clicktounhide" type="radio" name="optradio">
+											</label>
+											
+											</td>
+											<td><label>
+											  <input id="clicktohide" type="radio" name="optradio">
+											</label>
+										</td> </form>
+										 
+                                
+                                    </tr>
+                                    <tr>
+                                        <td>High Blood Pressure <textarea id="unhide2" class="form-control hidden" rows="3" placeholder="Please provide more information"></textarea></td>
+										<form role="form"><td>
+											<label>
+											  <input id="clicktounhide2" type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input id="clicktohide2" type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+                                    <tr>
+                                        <td>Blood Disease</td>
+										
+										<form role="form"><td>
+											<label>
+											  <input id="clicktounhide3" type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input id="clicktohide3" type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+                                    <tr>
+                                        <td>Cancer</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+									 <tr>
+                                        <td>Mental Illness</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+									 <tr>
+                                        <td>Hepatitis</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+									 <tr>
+                                        <td>Genetic Disease</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+									 <tr>
+                                        <td>Others</td>
+										<form role="form"><td>
+											<label>
+											  <input type="radio" name="optradio">
+											</label></td>
+											<td><label>
+											  <input type="radio" name="optradio">
+											</label>
+										 </td> </form>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+							<h4 class="voffset3">Did any of your family members passed away before the age of 40 or suffered a sudden death/sudden cardiac death?</h4>
+							<div id="clicktounhide9" class="i-checks voffset4"><label> <input type="radio" value="option1" name="a"> <i></i> No </label></div>
+                    <div id="clicktounhide8" class="i-checks voffset2"><label> <input type="radio" value="option2" name="a"> <i></i> Yes </label></div>
+					 <div id="unhide9" class="form-group voffset2 hidden"><blockquote><textarea class="form-control" rows="3" placeholder="Please specify family members and details"></textarea></blockquote></div>
+					 <div class="row">
+					 <div class="col-md-8">
+					 <h4 class="voffset4">Who will endorse this medical information for you?</h4>
+					 <label class="voffset3">SingPass ID/NRIC</label> <input class="form-control input-lg"> 
+					<label class="voffset3">Name</label> <input class="form-control input-lg"> 
+					<label class="voffset3">Relationship</label> <input class="form-control input-lg"> 					
+					<label class="voffset3">Mobile</label> <input class="form-control input-lg">
+					<label class="voffset3">Email</label> <input class="form-control input-lg">
+					<a class="btn btn-primary btn-lg voffset5 custom-btn" href="nsreg8.html" role="button">Continue</a>
+                    </div> </div>
 					</div>
 					</div>
-				</div>
 					</div>
-					
-					  <div class="ibox">
-                    <div class="container">
-					
-					<div class="row">
-					<div class="col-md-6">
-                <div class="ibox">
-                    <div class="ibox-content text-center ibox-urgent">
-						<h3>Book Medical Screening</h3>
-						<p><i class="fa fa-plus-square fa-4x"></i></p>
-                        <p>
-                            You need to book an appointment with CMPB for your medical checkup. </p>
-							<a class="btn btn-primary btn-lg custom-btn" href="../medbook/medbook1.html" role="button">Book now</a>
-                    </div>
-                </div>
-            </div>
-			<div class="col-md-6">
-                <div class="ibox text-center">
-                    <div class="ibox-content text-center ibox-urgent">
-					<h3>Confirm Deferment</h3>
-					<p><i class="fa fa-edit fa-4x"></i></p>
-                        <p>
-                            We noted you are going for <strong>further studies</strong> till <strong>1 June 2017</strong>. Please confirm your details to defer from NS. </p>
-							<a class="btn btn-primary btn-lg custom-btn" href="../defer/defer1.html" role="button">Apply now</a>
-                    </div>
-                </div>
-            </div>
+					</div>
 					</div>
 				
-				</div>
-					</div>
-					
 			</div>
         </div>
 </div>
@@ -154,7 +461,7 @@
 <script src="../../js/bootstrap.min.js"></script>
 <script src="../../js/plugins/metisMenu/jquery.metisMenu.js"></script>
 <script src="../../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-
+  <script src="../../js/plugins/datapicker/bootstrap-datepicker.js"></script>
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
@@ -163,9 +470,34 @@
 			$('#clicktounhide').click(function(){
 				$("#unhide").removeClass('hidden');
 			});
-			$('#clicktounhide1').click(function(){
+			$('#clicktohide').click(function(){
 				$("#unhide").addClass('hidden');
 			});
+			$('#clicktounhide2').click(function(){
+				$("#unhide2").removeClass('hidden');
+			});
+			$('#clicktohide2').click(function(){
+				$("#unhide2").addClass('hidden');
+			});
+			$('#clicktounhide3').click(function(){
+				$("#unhide3").removeClass('hidden');
+			});
+			$('#clicktohide3').click(function(){
+				$("#unhide3").addClass('hidden');
+			});
+			$('#clicktounhide9').click(function(){
+				$("#unhide9").addClass('hidden');
+			});
+			$('#clicktounhide8').click(function(){
+				$("#unhide9").removeClass('hidden');
+			});
+			 $('#data_1 .input-group.date').datepicker({
+                todayBtn: "linked",
+                keyboardNavigation: false,
+                forceParse: false,
+                calendarWeeks: true,
+                autoclose: true
+            });
 			});
 			</script>
 

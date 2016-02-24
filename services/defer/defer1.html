@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | Main view</title>
+    <title>CMPB Transactional eServices and Dashboard</title>
 
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -40,6 +40,9 @@
                 </li>
 				<li>
                     <a href="../../defermentanytime.html"><span class="nav-label">Apply for Deferment (Anytime)</span> </a>
+                </li>
+				<li>
+                    <a href="../../afterdeferment.html"><span class="nav-label">Deferment and Medical Review Updates</span> </a>
                 </li>
             </ul>
 
@@ -83,10 +86,23 @@
 						
 					<div class="ibox-content">
 					<div class="row">
-					<div class="col-md-5 col-md-offset-1">
-						<h3>Confirm Deferment</h3>
-                        <p class="voffset4">What details to show here?Hello!</p>
+					<div class="col-md-10 col-md-offset-1">
+					<h3>Confirm Deferment</h3>
+						<h4 class="voffset4">Check your answers before sending your application</h4>     
+                        <div>
+                                <table class="table voffset5">
+                   
+                                    <tbody>
+									<tr>
+                                        <td>Education</td>
+										<td>Singapore Polytechnic <br> Diploma in Engineering <br> June 2015 - June 2018 <br> Attending </td>
+										<td><a id="clicktounhide2" href="#"><u>Change</u></a></td>
+                                    </tr>
 						
+                                    </tbody>
+                                </table>
+                            </div>
+						<blockquote id="unhide3" class="hidden">Please submit the education certifications for your updated course. Please email to <a href="#"><u>contact@ns.sg</u></a> or fax to 68537894.</blockquote>
                     <a class="btn btn-primary btn-lg custom-btn" href="defer2.html" role="button">Confirm</a>
                     </div>
 					</div>
@@ -114,7 +130,16 @@
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
-
+<script>
+ $(document).ready(function(){
+			
+			$('#clicktounhide2').click(function(){
+				$("#unhide3").removeClass('hidden');
+			});
+			
+		
+			});
+</script>
 
 </body>
 
