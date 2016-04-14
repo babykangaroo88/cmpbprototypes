@@ -91,7 +91,328 @@
 						<h3>Apply for Deferment</h3>
                         <p class="voffset4">You may be granted deferment from NS for full-time studies depending on your eligibility.</p> 
 						
-						<p><a href="#"><u>Determine your eligibility for deferment</u></a> if you have not done so.</p>
+						<p><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg"><u>Determine your eligibility for deferment</u></a> if you have not done so.</p>
+						<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+						  <div class="modal-dialog modal-lg">
+							<div class="modal-content">
+							  <div class="ibox-content">
+					<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+							
+					 <div class="form-group voffset2 col-md-8">
+					 
+					 <h4>1. What is the highest education qualification you have attained? </h4>
+					
+					<div  class="i-checks voffset3"><label> <input type="radio" value="GCEA" name="example1"> <i></i> GCE ‘A’ Level, polytechnic diploma, or their equivalent</label></div>
+                    
+					<div  class="i-checks voffset2"><label> <input type="radio" value="GCEN" name="example1"> <i></i> GCE ‘N’ or ‘O’ Level course </label></div>
+					
+					<div  class="i-checks voffset2"><label> <input type="radio" value="GCEN" name="example1"> <i></i> National ITE Certificate (Nitec) course, Higher Nitec course, ITE Traineeship Scheme </label></div>
+					
+					<!--First Branch-->
+					  <div class="conditional voffset4" data-cond-option="example1" data-cond-value="GCEA">
+					  <div class="well">
+						<h3>You are not eligible for deferment.</h3>
+						<a href="../../defermentanytime.html"><u>Back to home</u></a></div>
+					  </div>
+					  <!--First Branch-->
+					  <div class="conditional voffset4" data-cond-option="example1" data-cond-value="GCEN">
+						 <h4>2. What is the course you wish to pursue? </h4>
+					
+					<div  class="i-checks voffset3"><label> <input type="radio" value="GCEA2" name="example2"> <i></i> GCE ‘A’ Level, NUS High School Diploma or International Baccalaureate Diploma course</label></div>
+                    
+					<div  class="i-checks voffset2"><label> <input type="radio" value="Poly" name="example2"> <i></i> Diploma course or Polytechnic Foundation Programme (PFP), followed by Diploma course</label></div>
+					
+					<div  class="i-checks voffset2"><label> <input type="radio" value="GCEA2" name="example2"> <i></i> National ITE Certificate (Nitec) course or Higher Nitec course </label></div>
+					<div  class="i-checks voffset2"><label> <input type="radio" value="Yes191" name="example2"> <i></i> ITE Traineeship Scheme </label></div>
+					<div  class="i-checks voffset2"><label> <input type="radio" value="GCEN2" name="example2"> <i></i> GCE ‘N’ or ‘O’ Level course </label></div>
+					
+					<div  class="i-checks voffset2"><label> <input type="radio" value="OtherCourses" name="example2"> <i></i> Building and Construction Authority (BCA) Academy's Diploma Courses and Pre-diploma Foundation Programme </label></div>
+					<div  class="i-checks voffset2"><label> <input type="radio" value="OtherCourses" name="example2"> <i></i> Courses offered by Private Education Institutions registered with the Council for Private Education </label></div>
+					<div  class="i-checks voffset2"><label> <input type="radio" value="OverseasCourses" name="example2"> <i></i> Courses offered by Overseas Institutions </label></div>
+					   <!--Second Branch GCEA-->
+					  <div class="conditional voffset4" data-cond-option="example2" data-cond-value="GCEA2">
+						 <h4>3. Are you a Secondary 4 or 5 student? </h4>
+					
+					<div  class="i-checks voffset3"><label> <input type="radio" value="Sec4" name="example3"> <i></i> Secondary 4</label></div>
+                    
+					<div  class="i-checks voffset2"><label> <input type="radio" value="Sec5" name="example3"> <i></i> Secondary 5</label></div>
+					 <div class="conditional voffset4" data-cond-option="example3" data-cond-value="Sec5">
+						
+						 <h4>4. Are you starting the course before 20 years old? </h4>
+					
+					<div  class="i-checks voffset3"><label> <input type="radio" value="Yes20" name="example4"> <i></i> Yes</label></div>
+                    
+					<div  class="i-checks voffset2"><label> <input type="radio" value="No20" name="example4"> <i></i> No</label></div>
+					<div class="conditional voffset4" data-cond-option="example4" data-cond-value="Yes20">
+						 <div class="well">
+						<h3>You are eligible for deferment.</h3>
+						<p>We will send you your education details for confirmation soon.</p>
+						<a href="../../defermentanytime.html"><u>Back to home</u></a></div>
+					
+					  </div>
+					  <div class="conditional voffset4" data-cond-option="example4" data-cond-value="No20">
+						
+						 <div class="well">
+						<h3>You are not eligible for deferment.</h3>
+						<a href="../../defermentanytime.html"><u>Back to home</u></a></div>
+					
+					  </div>
+					
+					  </div>
+					 <div class="conditional voffset4" data-cond-option="example3" data-cond-value="Sec4">
+						 <h4>4. Are you starting the course before 19 years old? </h4>
+					
+					<div  class="i-checks voffset3"><label> <input type="radio" value="Yes19" name="example4"> <i></i> Yes</label></div>
+                    
+					<div  class="i-checks voffset2"><label> <input type="radio" value="No19" name="example4"> <i></i> No</label></div>
+					<div class="conditional voffset4" data-cond-option="example4" data-cond-value="Yes19">
+						 <div class="well">
+						<h3>You are eligible for deferment.</h3>
+						<p>We will send you your education details for confirmation soon.</p>
+						<a href="../../defermentanytime.html"><u>Back to home</u></a></div>
+					
+					  </div>
+					  <div class="conditional voffset4" data-cond-option="example4" data-cond-value="No19">
+						
+						 <div class="well">
+						<h3>You are not eligible for deferment.</h3>
+						<a href="../../defermentanytime.html"><u>Back to home</u></a></div>
+					
+					  </div>
+					  </div>
+					  </div>
+					   <!--Second Branch Poly-->
+					  <div class="conditional voffset4" data-cond-option="example2" data-cond-value="Poly">
+						 <h4>3. Are you a Secondary 4, Secondary 5, Nitec or higher Nitec student? </h4>
+					
+					<div  class="i-checks voffset3"><label> <input type="radio" value="Sec4" name="example3"> <i></i> Secondary 4</label></div>
+                    
+					<div  class="i-checks voffset2"><label> <input type="radio" value="Sec5" name="example3"> <i></i> Secondary 5</label></div>
+					<div  class="i-checks voffset2"><label> <input type="radio" value="nitec6" name="example3"> <i></i> Nitec or higher Nitec</label></div>
+					
+					 <div class="conditional voffset4" data-cond-option="example3" data-cond-value="Sec5">
+						
+						 <h4>4. Are you starting the course before 20 years old? </h4>
+					
+					<div  class="i-checks voffset3"><label> <input type="radio" value="Yes20" name="example4"> <i></i> Yes</label></div>
+                    
+					<div  class="i-checks voffset2"><label> <input type="radio" value="No20" name="example4"> <i></i> No</label></div>
+					<div class="conditional voffset4" data-cond-option="example4" data-cond-value="Yes20">
+						 <div class="well">
+						<h3>You are eligible for deferment.</h3>
+						<p>We will send you your education details for confirmation soon.</p>
+						<a href="../../defermentanytime.html"><u>Back to home</u></a></div>
+					
+					  </div>
+					  <div class="conditional voffset4" data-cond-option="example4" data-cond-value="No20">
+						
+						 <div class="well">
+						<h3>You are not eligible for deferment.</h3>
+						<a href="../../defermentanytime.html"><u>Back to home</u></a></div>
+					
+					  </div>
+					
+					  </div>
+					 <div class="conditional voffset4" data-cond-option="example3" data-cond-value="Sec4">
+						 <h4>4. Are you starting the course before 19 years old? </h4>
+					
+					<div  class="i-checks voffset3"><label> <input type="radio" value="Yes19" name="example4"> <i></i> Yes</label></div>
+                    
+					<div  class="i-checks voffset2"><label> <input type="radio" value="No19" name="example4"> <i></i> No</label></div>
+					<div class="conditional voffset4" data-cond-option="example4" data-cond-value="Yes19">
+						 <div class="well">
+						<h3>You are eligible for deferment.</h3>
+						<p>We will send you your education details for confirmation soon.</p>
+						<a href="../../defermentanytime.html"><u>Back to home</u></a></div>
+					
+					  </div>
+					  <div class="conditional voffset4" data-cond-option="example4" data-cond-value="No19">
+						
+						 <div class="well">
+						<h3>You are not eligible for deferment.</h3>
+						<a href="../../defermentanytime.html"><u>Back to home</u></a></div>
+					
+					  </div>
+					  </div>
+					   <div class="conditional voffset4" data-cond-option="example3" data-cond-value="nitec6">
+						 <h4>4. Are you starting the course before 21 years old? </h4>
+					
+					<div  class="i-checks voffset3"><label> <input type="radio" value="Yes21" name="example4"> <i></i> Yes</label></div>
+                    
+					<div  class="i-checks voffset2"><label> <input type="radio" value="No21" name="example4"> <i></i> No</label></div>
+					<div class="conditional voffset4" data-cond-option="example4" data-cond-value="Yes21">
+						 <div class="well">
+						<h3>You are eligible for deferment.</h3>
+						<p>We will send you your education details for confirmation soon.</p>
+						<a href="../../defermentanytime.html"><u>Back to home</u></a></div>
+					
+					  </div>
+					  <div class="conditional voffset4" data-cond-option="example4" data-cond-value="No21">
+						
+						 <div class="well">
+						<h3>You are not eligible for deferment.</h3>
+						<a href="../../defermentanytime.html"><u>Back to home</u></a></div>
+					
+					  </div>
+					  </div>
+					  </div>
+					 
+					 <!----ITE Traineeship -->
+					  <div class="conditional voffset4" data-cond-option="example2" data-cond-value="Yes191">
+						 <h4>3. Are you starting the course before 19 years old? </h4>
+					
+					<div  class="i-checks voffset3"><label> <input type="radio" value="Yes191" name="example5"> <i></i> Yes</label></div>
+                    
+					<div  class="i-checks voffset2"><label> <input type="radio" value="No191" name="example5"> <i></i> No</label></div>
+					<div class="conditional voffset4" data-cond-option="example5" data-cond-value="Yes191">
+						 <div class="well">
+						<h3>You are eligible for deferment.</h3>
+						<p>We will send you your education details for confirmation soon.</p>
+						<a href="../../defermentanytime.html"><u>Back to home</u></a></div>
+					
+					  </div>
+					  <div class="conditional voffset4" data-cond-option="example5" data-cond-value="No191">
+						 <div class="well">
+						<h3>You are not eligible for deferment.</h3>
+						<a href="../../defermentanytime.html"><u>Back to home</u></a></div>
+					
+					  </div>
+					  </div>
+					  
+					  <!----N and O levels -->
+					  <div class="conditional voffset4" data-cond-option="example2" data-cond-value="GCEN2">
+						 <div class="well">
+						<h3>You are eligible for deferment.</h3>
+						<a class="btn btn-primary btn-lg custom-btn" href="applydefer2.html" role="button">Apply for Deferment now</a>
+						<p class="voffset3"><a href="../../defermentanytime.html"><u>Back to home</u></a></p></div>
+					
+					  </div>
+					  
+					  <!----Building-->
+					    <div class="conditional voffset4" data-cond-option="example2" data-cond-value="OtherCourses">
+						 <h4>3. Are you a Secondary 4, Secondary 5, Nitec or higher Nitec student? </h4>
+					
+					<div  class="i-checks voffset3"><label> <input type="radio" value="Sec4" name="example3"> <i></i> Secondary 4</label></div>
+                    
+					<div  class="i-checks voffset2"><label> <input type="radio" value="Sec5" name="example3"> <i></i> Secondary 5</label></div>
+					<div  class="i-checks voffset2"><label> <input type="radio" value="Sec5" name="example3"> <i></i> Nitec or higher Nitec</label></div>
+					
+					 <div class="conditional voffset4" data-cond-option="example3" data-cond-value="Sec5">
+						
+						 <h4>4. Are you starting the course before 20 years old? </h4>
+					
+					<div  class="i-checks voffset3"><label> <input type="radio" value="Yes20" name="example4"> <i></i> Yes</label></div>
+                    
+					<div  class="i-checks voffset2"><label> <input type="radio" value="No20" name="example4"> <i></i> No</label></div>
+					<div class="conditional voffset4" data-cond-option="example4" data-cond-value="Yes20">
+						<div class="well">
+						<h3>You are eligible for deferment.</h3>
+						<a class="btn btn-primary btn-lg custom-btn" href="applydefer2.html" role="button">Apply for Deferment now</a>
+						<p class="voffset3"><a href="../../defermentanytime.html"><u>Back to home</u></a></p></div>
+					
+					  </div>
+					  <div class="conditional voffset4" data-cond-option="example4" data-cond-value="No20">
+						
+						 <div class="well">
+						<h3>You are not eligible for deferment.</h3>
+						<a href="../../defermentanytime.html"><u>Back to home</u></a></div>
+					
+					  </div>
+					
+					  </div>
+					 <div class="conditional voffset4" data-cond-option="example3" data-cond-value="Sec4">
+						 <h4>4. Are you starting the course before 19 years old? </h4>
+					
+					<div  class="i-checks voffset3"><label> <input type="radio" value="Yes19" name="example4"> <i></i> Yes</label></div>
+                    
+					<div  class="i-checks voffset2"><label> <input type="radio" value="No19" name="example4"> <i></i> No</label></div>
+					<div class="conditional voffset4" data-cond-option="example4" data-cond-value="Yes19">
+						 <div class="well">
+						<h3>You are eligible for deferment.</h3>
+						<a class="btn btn-primary btn-lg custom-btn" href="applydefer2.html" role="button">Apply for Deferment now</a>
+						<p class="voffset3"><a href="../../defermentanytime.html"><u>Back to home</u></a></p></div>
+					
+					  </div>
+					  <div class="conditional voffset4" data-cond-option="example4" data-cond-value="No19">
+						
+						 <div class="well">
+						<h3>You are not eligible for deferment.</h3>
+						<a href="../../defermentanytime.html"><u>Back to home</u></a></div>
+					
+					  </div>
+					  </div>
+					
+					  </div>
+					  
+					   <!----Overseas-->
+					    <div class="conditional voffset4" data-cond-option="example2" data-cond-value="OverseasCourses">
+						 <h4>3. Are you a Secondary 4, Secondary 5, Nitec or higher Nitec student? </h4>
+					
+					<div  class="i-checks voffset3"><label> <input type="radio" value="Sec4" name="example3"> <i></i> Secondary 4</label></div>
+                    
+					<div  class="i-checks voffset2"><label> <input type="radio" value="Sec5" name="example3"> <i></i> Secondary 5</label></div>
+					<div  class="i-checks voffset2"><label> <input type="radio" value="Sec5" name="example3"> <i></i> Nitec or higher Nitec</label></div>
+					
+					 <div class="conditional voffset4" data-cond-option="example3" data-cond-value="Sec5">
+						
+						 <h4>4. Are you starting the course before 20 years old? </h4>
+					
+					<div  class="i-checks voffset3"><label> <input type="radio" value="Yes20" name="example4"> <i></i> Yes</label></div>
+                    
+					<div  class="i-checks voffset2"><label> <input type="radio" value="No20" name="example4"> <i></i> No</label></div>
+					<div class="conditional voffset4" data-cond-option="example4" data-cond-value="Yes20">
+						 <div class="well">
+						<h3>You are eligible for deferment.</h3>
+						<a class="btn btn-primary btn-lg custom-btn" href="applydefer2.html" role="button">Apply for Deferment now</a>
+						<p class="voffset3"><a href="../../defermentanytime.html"><u>Back to home</u></a></p></div>
+					
+					  </div>
+					  <div class="conditional voffset4" data-cond-option="example4" data-cond-value="No20">
+						
+						 <div class="well">
+						<h3>You are not eligible for deferment.</h3>
+						<a href="../../defermentanytime.html"><u>Back to home</u></a></div>
+					
+					  </div>
+					
+					  </div>
+					 <div class="conditional voffset4" data-cond-option="example3" data-cond-value="Sec4">
+						 <h4>4. Are you starting the course before 19 years old? </h4>
+					
+					<div  class="i-checks voffset3"><label> <input type="radio" value="Yes19" name="example4"> <i></i> Yes</label></div>
+                    
+					<div  class="i-checks voffset2"><label> <input type="radio" value="No19" name="example4"> <i></i> No</label></div>
+					<div class="conditional voffset4" data-cond-option="example4" data-cond-value="Yes19">
+						 <div class="well">
+						<h3>You are eligible for deferment.</h3>
+						
+						<a class="btn btn-primary btn-lg custom-btn" href="applydefer2.html" role="button">Apply for Deferment now</a>
+						<p class="voffset3"><a href="../../defermentanytime.html"><u>Back to home</u></a></p></div>
+					
+					  </div>
+					  <div class="conditional voffset4" data-cond-option="example4" data-cond-value="No19">
+						
+						 <div class="well">
+						<h3>You are not eligible for deferment.</h3>
+						<a href="../../defermentanytime.html"><u>Back to home</u></a></div>
+					
+					  </div>
+					  </div>
+					
+					  </div>
+					   
+					  </div> 
+					</div>
+					
+				
+					</div>
+					</div>
+						
+					</div>
+							</div>
+						  </div>
+						</div>
 						<p>You will need to submit your education documents during the application process.</p>
                     <a class="btn btn-primary btn-lg custom-btn" href="applydefer2.html" role="button">Start</a>
                     </div>
@@ -120,7 +441,11 @@
 <!-- Custom and plugin javascript -->
 <script src="../../js/inspinia.js"></script>
 <script src="../../js/plugins/pace/pace.min.js"></script>
-
+<script src="../../js/plugins/iCheck/icheck.min.js"></script>
+<script src="../../js/plugins/conditionize.jquery.js"></script>
+<script>
+ $('.conditional').conditionize();
+</script>
 
 </body>
 

@@ -80,7 +80,7 @@
 					<div class="ibox-content">
 					<ul class="list-inline col-md-offset-1">
 					  <li><a href="nsreg4.html"><i class="fa fa-angle-left"></i> Back</a></li>
-					  <li><h5 class="breadcrumb text-muted">Question 4 of 7</h5></li>
+					  <li><h5 class="breadcrumb text-muted">Question 4 of 5</h5></li>
 					</ul>
 				</div>
 						
@@ -106,7 +106,7 @@
 										<td>S1024982Y</td>
 										<td>Father</td>
 										<td>97380187</td>
-										
+										<td><a href="#"><u>Change Number</u></a></td>
                                 
                                     </tr>
                                     <tr>
@@ -120,7 +120,7 @@
 										<td>S7623824J</td>
 										<td>Mother</td>
 										<td>98401582</td>
-										
+										<td><a href="#"><u>Change Number</u></a></td>
                                     </tr>
                                     <tr>
 										<td>
@@ -133,7 +133,7 @@
 										<td>S9405925U</td>
 										<td>Sister</td>
 										<td>91405241</td>
-									
+									<td><a href="#"><u>Change Number</u></a></td>
                                     </tr>
 									 <tr>
 									 <td>
@@ -146,7 +146,7 @@
 										<td>S8789923O</td>
 										<td>Brother</td>
 										<td>90339817</td>
-										
+										<td><a href="#"><u>Change Number</u></a></td>
                                     </tr>
 									 <tr>
 									 <td>
@@ -159,11 +159,18 @@
 										<td>S8980042I</td>
 										<td>Spouse</td>
 										<td>98334260</td>
-										
+										<td><a href="#"><u>Change Number</u></a></td>
                                     </tr>
                                     </tbody>
                                 </table></div>
+									<a href="#" id="clicktounhide" class="underline">  <i id="arrow" class="fa fa-chevron-right"></i> I want to nominate someone else to be my emergency contact.</a>
+									 <div id="unhide" class="form-group voffset2 hidden"><blockquote><label class="voffset4">Name</label> <input class="form-control input-lg">
+									 <label class="voffset4" >NRIC</label> <input class="form-control input-lg">
+									 <label class="voffset4">Relationship</label> <input class="form-control input-lg">
+									 <label class="voffset4">Number</label> <input class="form-control input-lg">
+									 </blockquote></div>
                             </div>
+						
 					<a class="btn btn-primary btn-lg voffset5 custom-btn" href="nsreg6.html" role="button">Continue</a>
                     </div>
 					</div>
@@ -194,11 +201,13 @@
 <script src="../../js/plugins/iCheck/icheck.min.js"></script>
 <script>
         $(document).ready(function(){
-			$('#clicktounhide').click(function(){
-				$("#unhide").removeClass('hidden');
-			});
+		
 			$('#clicktounhide1').click(function(){
 				$("#unhide").addClass('hidden');
+			});
+			$('#clicktounhide').click(function(){
+				$("#unhide").toggleClass('hidden');
+				$("#arrow").toggleClass('fa fa-chevron-right').toggleClass('fa fa-chevron-down');
 			});
 	
 			});
